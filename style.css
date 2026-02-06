@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f6fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.calculator-container, .roadmap-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    width: 350px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.calculator input {
+    width: 140px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.calculator button {
+    padding: 0.6rem 1.2rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.calculator button:hover {
+    background: #45a049;
+}
+
+.result-container {
+    margin-top: 1rem;
+    background: #f1f2f6;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 50px;
+}
+
+pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    word-break: break-word;
+    color: #000;
+}
+
+.roadmap-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.roadmap-container li {
+    background: #e9ecef;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 6px;
+}
+
