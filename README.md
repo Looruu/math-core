@@ -1,29 +1,30 @@
-MathCore – Motor Matemático Modular para Solidity
+# MathCore – Motor Matemático Modular para Solidity
 License: MIT
+---
+## 📌 Descripción
 
-📌 Descripción
 MathCore es un motor matemático modular escrito en Solidity, diseñado para servir como base de sistemas inteligentes escalables, seguros y fáciles de mantener.
 El proyecto implementa operaciones matemáticas fundamentales y sienta las bases para construir funciones avanzadas, módulos estadísticos y futuros sistemas complejos como exchanges, bancos algorítmicos u oráculos.
 
 MathCore está pensado como un núcleo matemático reutilizable, ideal para desarrolladores que buscan arquitectura limpia, componible y extensible en Web3.
-
-🧩 Arquitectura del Sistema
+---
+##🧩 Arquitectura del Sistema
 El sistema está compuesto por dos elementos principales:
 
 🔸 MathCore (Módulo Matemático)
 Librería que implementa funciones matemáticas reutilizables:
 
-Suma
+    Suma
 
-Resta
+    Resta
 
-Multiplicación
+    Multiplicación
 
-División
+    División
 
-Potencia
+    Potencia
 
-Extensible a nuevas operaciones
+    Extensible a nuevas operaciones
 
 Su objetivo es centralizar la lógica matemática para evitar duplicación, mejorar la auditabilidad y permitir que otros contratos dependan de ella sin reescribir lógica crítica.
 function computeComplexFormula(uint256 x, uint256 y) external returns (uint256)
@@ -43,108 +44,97 @@ Ejemplo conceptual:
     return squared - product;
 }
 ```
-📁 Estructura del Repositorio
+## 🚀 Instalación
 
-```function computeComplexFormula(uint256 x, uint256 y) external returns (uint256) {
-MathCore/
-│
-├── contracts/
-│   ├── MathCore.sol
-│   └── ComplexSystem.sol
-│
-├── index.html                     
-├── package.json
-└── README.md
 
-```
-🚀 Instalación
 ```npm install```
 
 Compilación y Pruebas```npx hardhat compile npx hardhat test```
 
 Foundry ```forge build forge test```
 
-🗺️ Roadmap del Proyecto
+---
+## 🗺️ Roadmap del Proyecto
 Este roadmap define la evolución de MathCore desde una calculadora modular básica hasta un framework matemático completo para sistemas avanzados en Web3.
 
-📘 Fase V1 – Calculadora básica modular en Solidity (Estado actual)
-Implementación de operaciones fundamentales.
+## 📘 Fase V1 – Calculadora básica modular en Solidity (Estado actual)
+    Implementación de operaciones fundamentales.
 
-Arquitectura modular y escalable.
+    Arquitectura modular y escalable.
 
-Ejemplo funcional con ComplexSystem.
+    Ejemplo funcional con ComplexSystem.
 
-Base sólida para extender el sistema.
+    Base sólida para extender el sistema.
 
-📗 Fase V2 – Funciones matemáticas avanzadas
-Logaritmos, raíces, factoriales, combinatoria.
+## 📗 Fase V2 – Funciones matemáticas avanzadas
+    Logaritmos, raíces, factoriales, combinatoria.
 
-Operaciones con precisión extendida.
+    Operaciones con precisión extendida.
 
-Optimización de gas en operaciones complejas.
+    Optimización de gas en operaciones complejas.
+    
+    Nuevos módulos matemáticos independientes.
 
-Nuevos módulos matemáticos independientes.
-
-📙 Fase V3 – Probabilidades y Estadística
+## 📙 Fase V3 – Probabilidades y Estadística
 Distribuciones básicas (uniforme, binomial, normal aproximada).
 
-Cálculo de medias, varianzas, desviaciones estándar.
+    Cálculo de medias, varianzas, desviaciones estándar.
 
-Módulos de simulación probabilística.
+    Módulos de simulación probabilística.
 
-Base para futuros sistemas financieros.
+    Base para futuros sistemas financieros.
 
-📕 Fase V4 – Integración para sistemas complejos (Exchange, Bancos, Oráculos, etc.)
+## 📕 Fase V4 – Integración para sistemas complejos (Exchange, Bancos, Oráculos, etc.)
 Módulos financieros avanzados.
 
-Integración con oráculos externos.
+    Integración con oráculos externos.
 
-Cálculos de riesgo, pricing, volatilidad.
+    Cálculos de riesgo, pricing, volatilidad.
 
-Arquitectura para futuros DEX, bancos algorítmicos o motores de liquidez.
+    Arquitectura para futuros DEX, bancos algorítmicos o motores de liquidez.
 
-🔐 Fase V5 – Seguridad y Auditoría
+## 🔐 Fase V5 – Seguridad y Auditoría
 Revisión de invariantes matemáticos.
 
-Validaciones estrictas de entrada.
+    Validaciones estrictas de entrada.
 
-Pruebas fuzzing y property-based testing.
+    Pruebas fuzzing y property-based testing.
 
-Auditoría interna del sistema modular.
+    Auditoría interna del sistema modular.
 
-📄 Fase V6 – Documentación profesional
-Documentación técnica completa.
+## 📄 Fase V6 – Documentación profesional
+    Documentación técnica completa.
 
-READMEs por módulo.
+    READMEs por módulo.
 
-Ejemplos de uso y guías de integración.
+    Ejemplos de uso y guías de integración.
 
-Explicación de patrones de diseño utilizados.
+    Explicación de patrones de diseño utilizados.
 
-🔭 Fase V7 – Investigación de mejoras futuras
-Estudio de nuevas funciones matemáticas.
+## 🔭 Fase V7 – Investigación de mejoras futuras
+    Estudio de nuevas funciones matemáticas.
 
-Posibles integraciones con IA o ML on-chain.
+    Posibles integraciones con IA o ML on-chain.
 
-Optimización de gas mediante técnicas avanzadas.
+    Optimización de gas mediante técnicas avanzadas.
 
-Evaluación de migración a sistemas L2 o zk.
+    Evaluación de migración a sistemas L2 o zk.
 
-🎨 Fase V8 – Interfaz HTML/CSS y estética del producto
-Interfaz visual profesional.
+##🎨 Fase V8 – Interfaz HTML/CSS y estética del producto
+    Interfaz visual profesional.
 
-Dashboard para probar fórmulas.
+    Dashboard para probar fórmulas.
 
-Visualización de resultados matemáticos.
+    Visualización de resultados matemáticos.
 
-Branding y diseño UI/UX.
+    Branding y diseño UI/UX.
 
-🤝 Contribuciones
+## 🤝 Contribuciones
 Las contribuciones son bienvenidas.
 Puedes abrir un issue o enviar un pull request.
 o si prefieres hablarme por DM
 
-📄 Licencia
+##📄 Licencia
 Este proyecto está bajo licencia MIT.
 
 —
