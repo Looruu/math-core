@@ -3,44 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Constructor v1 - Calculadora</title>
+    <title>MathCore v1 – Calculadora Modular</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="app-container">
 
-        <!-- Calculadora -->
-        <div class="calculator-container">
-            <h1>Smart Constructor v1</h1>
-            <p>Calculadora de fórmula `(x + y)^2 - (x * y)` simulando ComplexSystem</p>
+        <!-- Intro -->
+        <section class="intro card fade-in">
+            <h1 class="title">MathCore – Motor Matemático Modular para Solidity</h1>
+            <p class="text">
+                <strong>MathCore</strong> es un proyecto en fase <strong>v1</strong> que busca construir un 
+                motor matemático modular, escalable y reutilizable para contratos inteligentes en Solidity.
+                Esta primera versión demuestra cómo una arquitectura simple puede crecer hacia sistemas
+                complejos mediante módulos componibles.
+            </p>
+            <p class="text">
+                La fórmula actual implementada es:
+                <code>(x + y)^2 - (x * y)</code>, un ejemplo práctico de cómo MathCore gestionará
+                operaciones matemáticas más avanzadas en el futuro.
+            </p>
+        </section>
 
-            <div class="calculator">
-                <input type="number" id="x" placeholder="Valor X">
-                <input type="number" id="y" placeholder="Valor Y">
-                <button id="computeBtn">Calcular</button>
+        <!-- Calculadora -->
+        <section class="calculator card fade-in">
+            <h2 class="subtitle">MathCore v1 – Calculadora de Fórmula</h2>
+            <p class="text">Calculadora de la fórmula <code>(x + y)^2 - (x * y)</code>.</p>
+
+            <div class="calculator-inputs">
+                <input type="number" id="x" placeholder="Valor X" class="input">
+                <input type="number" id="y" placeholder="Valor Y" class="input">
+                <button id="computeBtn" class="btn-primary">Calcular</button>
             </div>
 
             <div class="result-container">
-                <h2>Resultado:</h2>
-                <pre id="result">Aquí aparecerá el resultado...</pre>
+                <h3 class="subtitle">Resultado:</h3>
+                <pre id="result" class="result-box">Aquí aparecerá el resultado...</pre>
             </div>
-        </div>
+        </section>
 
         <!-- Roadmap -->
-        <div class="roadmap-container">
-            <h2>Roadmap del Proyecto</h2>
-            <ul>
-                <li><strong>v1:</strong> Calculadora básica para ERC20, simulación de fórmula</li>
-                <li><strong>v1.1:</strong> Integración con MathCore real en Solidity</li>
-                <li><strong>v2:</strong> Soporte para múltiples tokens y contratos complejos</li>
-                <li><strong>v2.1:</strong> Interfaz Web3 real con MetaMask</li>
-                <li><strong>v3:</strong> Sistema modular y componible completo, integración HTS/HCS en Hedera</li>
-                <li><strong>v4:</strong> Dashboard completo con historial de cálculos y exportación</li>
+        <section class="roadmap card fade-in">
+            <h2 class="subtitle">Roadmap del Proyecto MathCore</h2>
+            <p class="text">
+                MathCore evolucionará desde una calculadora modular básica hasta un framework matemático
+                completo para sistemas Web3 avanzados.
+            </p>
+
+            <ul class="roadmap-list">
+                <li><strong>V1 (Actual):</strong> Calculadora básica modular en Solidity.</li>
+                <li><strong>V2:</strong> Funciones matemáticas avanzadas.</li>
+                <li><strong>V3:</strong> Probabilidad y estadística.</li>
+                <li><strong>V4:</strong> Integración para sistemas complejos (DEX, bancos, oráculos).</li>
+                <li><strong>V5:</strong> Seguridad y auditoría.</li>
+                <li><strong>V6:</strong> Documentación profesional.</li>
+                <li><strong>V7:</strong> Investigación y mejoras futuras.</li>
+                <li><strong>V8:</strong> Interfaz HTML/CSS final y estética premium.</li>
             </ul>
-        </div>
+        </section>
+
+        <!-- Autor -->
+        <section class="author card fade-in">
+            <h2 class="subtitle">Autor</h2>
+            <p class="text">
+                <strong>Rubén Acedo</strong><br>
+                Blockchain Developer · Smart Contract Architect · Web3 Systems Designer
+            </p>
+            <p class="text">
+                GitHub: <a href="https://github.com/Looruu" target="_blank">github.com/Looruu</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/ruben-acedo/" target="_blank">linkedin.com/in/ruben-acedo</a>
+            </p>
+        </section>
 
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
