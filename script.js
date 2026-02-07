@@ -1,20 +1,24 @@
-document.getElementById("computeBtn").addEventListener("click", () => {
-    const x = Number(document.getElementById("x").value);
-    const y = Number(document.getElementById("y").value);
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("computeBtn");
+    const resultBox = document.getElementById("result");
 
-    if (isNaN(x) || isNaN(y)) {
-        alert("Por favor ingresa ambos valores.");
-        return;
-    }
+    btn.addEventListener("click", () => {
+        const x = parseFloat(document.getElementById("x").value);
+        const y = parseFloat(document.getElementById("y").value);
 
-    // Simulación de la función computeComplexFormula
-    function computeComplexFormula(x, y) {
+        if (isNaN(x) || isNaN(y)) {
+            resultBox.textContent = "Por favor introduce valores vÃ¡lidos.";
+            resultBox.style.color = "#EF4444";
+            return;
+        }
+
+        // FÃ³rmula: (x + y)^2 - (x * y)
         const sum = x + y;
         const squared = Math.pow(sum, 2);
         const product = x * y;
-        return squared - product;
-    }
+        const result = squared - product;
 
-    const result = computeComplexFormula(x, y);
-    document.getElementById("result").textContent = result;
+        resultBox.textContent = `Resultado: ${result}`;
+        resultBox.style.color = "#10B981";
+    });
 });
