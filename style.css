@@ -1,87 +1,156 @@
+/* ------------------------------
+   ESTILO GLOBAL
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f5f6fa;
-    color: #333;
     margin: 0;
     padding: 0;
+    background: #0A0F1F;
+    font-family: 'Inter', sans-serif;
+    color: #F3F4F6;
 }
 
+/* Contenedor principal */
 .app-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
 }
 
-.calculator-container, .roadmap-container {
-    background: #fff;
-    padding: 2rem;
+/* ------------------------------
+   TARJETAS / CARDS
+------------------------------ */
+
+.card {
+    background: rgba(17, 24, 39, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-    width: 350px;
-    text-align: center;
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.08);
+    backdrop-filter: blur(6px);
 }
 
-h1, h2 {
-    margin-bottom: 0.5rem;
+/* Animación suave */
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+    opacity: 0;
 }
 
-p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1.5rem;
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 
-.calculator input {
-    width: 140px;
-    padding: 0.5rem;
-    margin: 0.5rem;
+/* ------------------------------
+   TITULOS Y TEXTOS
+------------------------------ */
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3B82F6;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #10B981;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #D1D5DB;
+}
+
+code {
+    background: #1F2937;
+    padding: 4px 8px;
     border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+    color: #3B82F6;
 }
 
-.calculator button {
-    padding: 0.6rem 1.2rem;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+/* ------------------------------
+   CALCULADORA
+------------------------------ */
+
+.calculator-inputs {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-.calculator button:hover {
-    background: #45a049;
-}
-
-.result-container {
-    margin-top: 1rem;
-    background: #f1f2f6;
-    padding: 1rem;
+.input {
+    flex: 1;
+    padding: 12px;
     border-radius: 8px;
-    min-height: 50px;
+    border: 1px solid #3B82F6;
+    background: #111827;
+    color: #F3F4F6;
+    font-size: 16px;
 }
 
-pre {
-    margin: 0;
-    font-family: 'Courier New', monospace;
-    word-break: break-word;
-    color: #000;
+.input:focus {
+    outline: none;
+    border-color: #10B981;
 }
 
-.roadmap-container ul {
+/* Botón principal */
+.btn-primary {
+    padding: 12px 20px;
+    background: #3B82F6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #2563EB;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+}
+
+/* Resultado */
+.result-box {
+    background: #1F2937;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #3B82F6;
+    color: #10B981;
+    font-size: 18px;
+}
+
+/* ------------------------------
+   ROADMAP
+------------------------------ */
+
+.roadmap-list {
     list-style: none;
-    padding: 0;
-    text-align: left;
+    padding-left: 0;
 }
 
-.roadmap-container li {
-    background: #e9ecef;
-    margin: 0.5rem 0;
-    padding: 0.8rem;
-    border-radius: 6px;
+.roadmap-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #3B82F6;
 }
 
+/* ------------------------------
+   LINKS
+------------------------------ */
+
+a {
+    color: #3B82F6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
