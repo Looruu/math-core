@@ -7,9 +7,39 @@ MathCore es un motor matemático modular escrito en Solidity, diseñado para ser
 El proyecto implementa operaciones matemáticas fundamentales y sienta las bases para construir funciones avanzadas, módulos estadísticos y futuros sistemas complejos como exchanges, bancos algorítmicos u oráculos.
 
 MathCore está pensado como un núcleo matemático reutilizable, ideal para desarrolladores que buscan arquitectura limpia, componible y extensible en Web3.
+
+## 📌 Características principales -
+🔢 Operaciones matemáticas fundamentales (add, sub, mul, div, pow) 
+- 🧩 Módulos avanzados: sqrt, powFast, max/min, promedio seguro
+- - 🎲 Combinatoria: factorial, nCr, nPr
+- - 📏 Precisión extendida con escala fija 1e18
+- - 🧠 Ejemplos reales de integración:
+- - **ComplexSystemV1** → Fórmulas básicas
+- - **ComplexSystemV2** → Fórmulas financieras y de riesgo
+- - 🧪 Tests completos con Hardhat
+- - 🚀 Scripts de deploy incluidos
+
 ---
-##🧩 Arquitectura del Sistema
-El sistema está compuesto por dos elementos principales:
+## 📁 Estructura del proyecto
+```contracts/
+│
+├── MathLib.sol
+├── MathAdvanced.sol
+├── MathCombinatorics.sol
+├── MathPrecision.sol
+├── MathCore.sol
+│
+├── ComplexSystemV1.sol
+└── ComplexSystemV2.sol
+
+scripts/
+└── deploy.js
+
+test/
+├── ComplexSystemV1.test.js
+└── ComplexSystemV2.test.js
+```
+
 
 🔸 MathCore (Módulo Matemático)
 Librería que implementa funciones matemáticas reutilizables:
@@ -53,11 +83,25 @@ Compilación y Pruebas```npx hardhat compile npx hardhat test```
 
 Foundry ```forge build forge test```
 
+🚀 Deploy
+Script:
+
+```
+npx hardhat run scripts/deploy.js --network sepolia
+```
+El script despliega:
+
+MathCore
+
+ComplexSystemV1
+
+ComplexSystemV2
+
 ---
 ## 🗺️ Roadmap del Proyecto
 Este roadmap define la evolución de MathCore desde una calculadora modular básica hasta un framework matemático completo para sistemas avanzados en Web3.
 
-## 📘 Fase V1 – Calculadora básica modular en Solidity (Estado actual)
+## 📘 Fase V1 – Calculadora básica modular en Solidity ✔️
     Implementación de operaciones fundamentales.
 
     Arquitectura modular y escalable.
@@ -66,7 +110,7 @@ Este roadmap define la evolución de MathCore desde una calculadora modular bás
 
     Base sólida para extender el sistema.
 
-## 📗 Fase V2 – Funciones matemáticas avanzadas
+## 📗 Fase V2 – Funciones matemáticas avanzadas ✔️
     Logaritmos, raíces, factoriales, combinatoria.
 
     Operaciones con precisión extendida.
@@ -75,7 +119,7 @@ Este roadmap define la evolución de MathCore desde una calculadora modular bás
     
     Nuevos módulos matemáticos independientes.
 
-## 📙 Fase V3 – Probabilidades y Estadística
+## 📙 Fase V3 – Probabilidades y Estadística (desarrollo)
 Distribuciones básicas (uniforme, binomial, normal aproximada).
 
     Cálculo de medias, varianzas, desviaciones estándar.
