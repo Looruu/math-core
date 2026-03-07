@@ -176,7 +176,7 @@ Revisión de invariantes matemáticos.
 ## 🤝 Contribuciones
 Las contribuciones son bienvenidas.
 Puedes abrir un issue o enviar un pull request.
-o si prefieres hablarme por DM
+o si prefieres hablarme por DM en Linkenid 
 
 ##📄 Licencia
 Este proyecto está bajo licencia MIT.
